@@ -1,5 +1,7 @@
 
 import { Header } from "../../components/Header/Header"
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 import Player from "/player.gif";
 import Heart from "/heart.gif";
 export const Home = () => {
@@ -15,7 +17,26 @@ export const Home = () => {
                         <img className="h-7 pl-2"src={Heart}/>
                     </div>
                     <p className="text-[14px] text-orange-950">Desenvolvedor Full Stack | Java | .NET | React</p>
-                    
+                    <div className="card">
+                        <p>Card test</p>
+                    </div>
+                    <div className="card">
+                        <p>Card 2</p>
+                    </div>
+                    <div className="flex gap-2">
+                        <a href="https://github.com/AdurraIS" target="_blank">
+                            <div className="card-links">
+                                <FaGithub size="24px"/>
+                                <p>GitHub</p>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/giovanni-ultramari/" target="_blank">
+                            <div className="card-links">
+                                <FaLinkedin size="24px"/>
+                                <p>Linkedin</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
                 <div className="w-1/2 flex justify-end">
                     
