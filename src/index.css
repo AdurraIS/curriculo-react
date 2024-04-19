@@ -5,11 +5,11 @@
 @tailwind utilities;
 
 .card{
-  @apply border rounded p-2 mt-3 border-orange-800 bg-opacity-65 bg-orange-300
-  hover:scale-105 transition-all duration-300 md:w-[80%] sm:w-full shadow-xl;
+  @apply border rounded p-2 border-orange-800 bg-opacity-65 bg-orange-300
+  hover:scale-105 transition-all duration-300 md:w-[80%] sm:w-full shadow-xl ;
 }
 .card-links{
-  @apply border rounded p-2 mt-3 w-fit content-center border-orange-800 bg-opacity-65 gap-2 flex bg-orange-300
+  @apply border rounded p-2 w-fit content-center border-orange-800 bg-opacity-65 gap-2 flex bg-orange-300
   hover:scale-105 transition-all duration-300 shadow-xl items-center justify-center;
 }
 

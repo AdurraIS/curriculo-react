@@ -15,7 +15,7 @@ export const Home = () => {
     <>
         <div className="flex flex-col items-center pt-6 bg-orange-200 h-full w-screen ">
             <Header/>
-            <div className="pt-20 text-orange-900 flex flex-row w-full min-h-[80vh] max-h-full px-[15vw] pb-6">
+            <div className="pt-20 text-orange-900 flex flex-row w-full lg:min-h-[80vh] max-h-full px-[15vw] pb-9">
                 <div className="lg:w-1/2 xl:w-1/2 sm:w-full flex flex-col">
                     <h1 className=" text-[36px] max-[639px]:text-[24px]">Giovanni Ultramari</h1>
                     <div className="flex flex-row items-center pb-2 text-left">
@@ -23,9 +23,12 @@ export const Home = () => {
                         <img className="h-7 pl-2"src={Heart}/>
                     </div>
                     <h3 className="text-[16px] text-orange-950">Desenvolvedor Full Stack | Java | .NET | React</h3>
-                    <CardContent content="• Quarto Semestre Análise e Desenvolvimento de Sistemas." />
-                    <CardContent content="• Entusiasta de produção musical e jogos." />
-                    
+                    <div className="mt-3">
+                        <CardContent content="• Quarto Semestre Análise e Desenvolvimento de Sistemas." />
+                    </div>
+                    <div className="my-3">
+                        <CardContent content="• Entusiasta de produção musical e jogos." />
+                    </div>
                     <div className="flex gap-2">
                         <a href="https://github.com/AdurraIS" target="_blank">
                             <CardLink icon={<FaGithub size="24px"/>} text="GitHub"/>
@@ -34,7 +37,7 @@ export const Home = () => {
                             <CardLink icon={<FaLinkedin size="24px"/>} text="Linkedin"/>
                         </a>
                     </div>
-                    <h3 className="text-[16px] text-orange-950 mt-8">Principais Habilidades</h3>
+                    <h3 className="text-[16px] text-orange-950 mt-8 mb-2">Principais Habilidades</h3>
                     <div className="flex gap-2">
                     <CardSkill content={<img src={NETLOGO} className="size-11"/>} text=".NET"/>
                     <CardSkill content={<img src={JAVALOGO} className="size-11"/>} text="JAVA"/>
@@ -48,14 +51,14 @@ export const Home = () => {
                 
             </div>
             <div className=" text-orange-900 bg-orange-600 bg-opacity-30 flex flex-col min-h-[30vh] py-10
-            w-full max-h-full px-[15vw] justify-center">
+            w-full max-h-full lg:px-[15vw] md:px-[8vw] px-[15vw] justify-center">
                 <div className="flex flex-row justify-between">
-                    <div className="w-[40%] max-[639px]:w-0">
+                    <div className="scale-[40vw] flex items-center max-[800px]:size-0">
                         <img className="size-96"src={Personagem}/>
                     </div>
-                    <div className="w-[60%] max-[639px]:w-full">
+                    <div className="w-[60%] max-[800px]:w-full">
                         <h1 className="text-[26px]">Sobre mim</h1>
-                        <p className="max-[639px]:p-0 p-2 text-[18px]">
+                        <p className="max-[800px]:p-0 p-2 text-[18px]">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie est id
                             fermentum ultrices. Nunc condimentum blandit ligula, maximus posuere ligula condimentum
                             vitae. Quisque dictum efficitur eros, sed fermentum odio egestas sed. Cras sodales sit
@@ -69,7 +72,7 @@ export const Home = () => {
             </div>
             <div className=" text-orange-900 pt-20 flex flex-col min-h-[30vh]
             py-10 w-full max-h-full px-[15vw] justify-center">
-                <h3 className="text-[26px]">Hard Skills</h3>
+                <h3 className="text-[26px] mb-6">Hard Skills</h3>
                 <div className="flex flex-row flex-wrap gap-4 w-full">
                     <CardSkill content={<img src={NETLOGO} className="sm:size-16 max-[639px]:size-14"/>} text=".NET"/>
                     <CardSkill content={<img src={JAVALOGO} className="sm:size-16 max-[639px]:size-14"/>} text="JAVA"/>
@@ -92,7 +95,8 @@ const CardSkill = ({content, text}) => (
         <div className="group-hover:scale-0 group-hover:opacity-0 transition-all duration-300">
             {content}
         </div>
-        <h3 className=" absolute group-hover:scale-100 text-[16px] group-hover:opacity-100 scale-0 opacity-0 transition-all duration-300">
+        <h3 className=" absolute group-hover:scale-100 text-[16px] group-hover:opacity-100 scale-0 
+        opacity-0 transition-all duration-300">
             {text}
         </h3>
     </div>
