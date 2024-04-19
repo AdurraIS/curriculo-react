@@ -11,11 +11,14 @@ import Player from "/player.gif";
 import Heart from "/heart.gif";
 
 export const Home = () => {
+
+ 
+
   return (
     <>
         <div className="flex flex-col items-center pt-6 bg-orange-200 h-full w-screen ">
             <Header/>
-            <div className="pt-20 text-orange-900 flex flex-row w-full lg:min-h-[80vh] max-h-full px-[15vw] pb-9">
+            <div id="Home" className="pt-20 text-orange-900 flex flex-row w-full lg:min-h-[80vh] max-h-full px-[15vw] pb-9">
                 <div className="lg:w-1/2 xl:w-1/2 sm:w-full flex flex-col">
                     <h1 className=" text-[36px] max-[639px]:text-[24px]">Giovanni Ultramari</h1>
                     <div className="flex flex-row items-center pb-2 text-left">
@@ -50,7 +53,7 @@ export const Home = () => {
                 </div>
                 
             </div>
-            <div className=" text-orange-900 bg-orange-600 bg-opacity-30 flex flex-col min-h-[30vh] py-10
+            <div id="About" className=" text-orange-900 bg-orange-600 bg-opacity-30 flex flex-col min-h-[30vh] py-10
             w-full max-h-full lg:px-[15vw] md:px-[8vw] px-[15vw] justify-center">
                 <div className="flex flex-row justify-between">
                     <div className="scale-[40vw] flex items-center max-[800px]:size-0">
@@ -70,7 +73,7 @@ export const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className=" text-orange-900 pt-20 flex flex-col min-h-[30vh]
+            <div id="Skills" className=" text-orange-900 pt-20 flex flex-col min-h-[30vh]
             py-10 w-full max-h-full px-[15vw] justify-center">
                 <h3 className="text-[26px] mb-6">Hard Skills</h3>
                 <div className="flex flex-row flex-wrap gap-4 w-full">
