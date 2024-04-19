@@ -17,9 +17,9 @@ export const Home = () => {
             <Header/>
             <div className="pt-20 text-orange-900 flex flex-row w-full min-h-[80vh] max-h-full px-[15vw] pb-6">
                 <div className="lg:w-1/2 xl:w-1/2 sm:w-full flex flex-col">
-                    <h1 className=" text-[36px]">Giovanni Ultramari</h1>
+                    <h1 className=" text-[36px] max-[639px]:text-[24px]">Giovanni Ultramari</h1>
                     <div className="flex flex-row items-center pb-2 text-left">
-                        <h2 className="text-[18px]">Software Engineer</h2>
+                        <h2 className="md:text-[18px] max-[639px]:text-[15px]">Software Engineer</h2>
                         <img className="h-7 pl-2"src={Heart}/>
                     </div>
                     <h3 className="text-[16px] text-orange-950">Desenvolvedor Full Stack | Java | .NET | React</h3>
@@ -50,12 +50,12 @@ export const Home = () => {
             <div className=" text-orange-900 bg-orange-600 bg-opacity-30 flex flex-col min-h-[30vh] py-10
             w-full max-h-full px-[15vw] justify-center">
                 <div className="flex flex-row justify-between">
-                    <div className="w-[40%] ">
+                    <div className="w-[40%] max-[639px]:w-0">
                         <img className="size-96"src={Personagem}/>
                     </div>
-                    <div className="w-[60%]">
+                    <div className="w-[60%] max-[639px]:w-full">
                         <h1 className="text-[26px]">Sobre mim</h1>
-                        <p className="p-2 text-[18px]">
+                        <p className="max-[639px]:p-0 p-2 text-[18px]">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer molestie est id
                             fermentum ultrices. Nunc condimentum blandit ligula, maximus posuere ligula condimentum
                             vitae. Quisque dictum efficitur eros, sed fermentum odio egestas sed. Cras sodales sit
@@ -70,11 +70,11 @@ export const Home = () => {
             <div className=" text-orange-900 pt-20 flex flex-col min-h-[30vh]
             py-10 w-full max-h-full px-[15vw] justify-center">
                 <h3 className="text-[26px]">Hard Skills</h3>
-                <div className="flex flex-row flex-wrap gap-4">
-                    <CardSkill content={<img src={NETLOGO} className="size-16"/>} text=".NET"/>
-                    <CardSkill content={<img src={JAVALOGO} className="size-16"/>} text="JAVA"/>
-                    <CardSkill content={<img src={REACTLOGO} className="size-16"/>}text="REACT"/>
-                    <CardSkill content={<img src={pythonlogo} className="size-16"/>}text="PYTHON"/>
+                <div className="flex flex-row flex-wrap gap-4 w-full">
+                    <CardSkill content={<img src={NETLOGO} className="sm:size-16 max-[639px]:size-14"/>} text=".NET"/>
+                    <CardSkill content={<img src={JAVALOGO} className="sm:size-16 max-[639px]:size-14"/>} text="JAVA"/>
+                    <CardSkill content={<img src={REACTLOGO} className="sm:size-16 max-[639px]:size-14"/>}text="REACT"/>
+                    <CardSkill content={<img src={pythonlogo} className="sm:size-16 max-[639px]:size-14"/>}text="PYTHON"/>
                 </div>
             </div>
         </div>
