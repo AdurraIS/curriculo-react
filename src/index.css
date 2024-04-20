@@ -4,6 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
+.card{
+  @apply border rounded p-2 border-orange-800 bg-opacity-65 bg-orange-300
+  hover:scale-105 transition-all duration-300 md:w-[80%] sm:w-full shadow-xl ;
+}
+.card-links{
+  @apply border rounded p-2 w-fit content-center border-orange-800 bg-opacity-65 gap-2 flex bg-orange-300
+  hover:scale-105 transition-all duration-300 shadow-xl items-center justify-center;
+}
+
 h1 {
   font-family: "Pixelify Sans";
 }
@@ -12,4 +21,19 @@ h2{
 }
 p{
   font-family: "Montserrat";
+}
+::-webkit-scrollbar {
+  width: 15px;
+
+  background: rgb(255, 192, 141);
+}
+
+::-webkit-scrollbar-thumb {
+  
+  background:  rgba(154, 52, 18, 0.555); 
+  border-radius: 2px;
+  height: 20px;
+}
+html{
+  overflow-x: hidden;
 }
