@@ -22,3 +22,18 @@ h2{
 p{
   font-family: "Montserrat";
 }
+::-webkit-scrollbar {
+  width: 15px;
+
+  background: rgb(255, 192, 141);
+}
+
+::-webkit-scrollbar-thumb {
+  
+  background:  rgba(154, 52, 18, 0.555); 
+  border-radius: 2px;
+  height: 20px;
+}
+html{
+  overflow-x: hidden;
+}
