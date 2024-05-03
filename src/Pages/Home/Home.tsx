@@ -16,10 +16,14 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import Player from "../../assets/player.gif";
 import Heart from "../../assets/heart.gif";
+import Carrossel from "../../components/Carrossel/Carrossel";
 
 export const Home = () => {
 
- 
+const items = [
+    csharplogo,
+    typescriptlogo
+    ];
 
   return (
     <>
@@ -49,7 +53,6 @@ export const Home = () => {
                     </div>
                     <h3 className="text-[16px] text-orange-950 mt-8 mb-2">Principais Habilidades</h3>
                     <div className="flex gap-2">
-                        <CardSkill content={<img src={NETLOGO} className="size-11"/>} text=".NET"/>
                         <CardSkill content={<img src={JAVALOGO} className="size-11"/>} text="JAVA"/>
                         <CardSkill content={<img src={REACTLOGO} className="size-11"/>}text="REACT"/>
                         <button onClick={() => document.getElementById("Skills")?.scrollIntoView({ behavior: 'smooth'})}>
@@ -82,16 +85,16 @@ export const Home = () => {
                     </div>
                 </div>
             </div>
-            <div id="Skills" className=" text-orange-900 pt-20 flex flex-col min-h-[30vh]
-            py-10 w-full max-h-full px-[15vw] justify-center">
+            <div id="Skills" className=" text-orange-900 flex flex-col min-h-[30vh]
+            py-20 mb-10 w-full max-h-full px-[15vw] justify-center">
                 <h3 className="text-[26px] mb-6">Hard Skills</h3>
-                <div className="flex flex-row gap-4 justify-center flex-wrap select-none w-full">
-                    <CardSkill content={<img src={NETLOGO} className="sm:size-[70px] max-[639px]:size-14"/>} 
-                    text=".NET"/>
+                <div className=" flex flex-row gap-4 justify-center flex-wrap select-none w-full">
                     <CardSkill content={<img src={JAVALOGO} className="sm:size-[70px] max-[639px]:size-14"/>} 
                     text="JAVA"/>
                     <CardSkill content={<img src={REACTLOGO} className="sm:size-[70px] max-[639px]:size-14"/>}
                     text="REACT"/>
+                    <CardSkill content={<img src={NETLOGO} className="sm:size-[70px] max-[639px]:size-14"/>} 
+                    text=".NET"/>
                     <CardSkill content={<img src={pythonlogo} className="sm:size-[70px] max-[639px]:size-14"/>}
                     text="PYTHON"/>
                     <CardSkill content={<img src={tailwindlogo} className="sm:size-[70px] max-[639px]:size-14"/>}
@@ -115,6 +118,11 @@ export const Home = () => {
                     <CardContent content="Trabalho em equipe"/>
                     <CardContent content="Resolução de problemas"/>
                 </div>
+            </div>
+            <div id="Projects" className=" text-orange-900 bg-orange-600 bg-opacity-30 pt-20 flex flex-col min-h-[30vh]
+            py-10 w-full max-h-full px-[15vw] justify-center">
+                 <h3 className="text-[26px] text-center mb-6">Projetos</h3>
+                 <Carrossel items={items}/>
             </div>
         </div>
     </>
