@@ -20,7 +20,7 @@ const handleClick = (elementId) => {
                     <NavItem icon={<RiAccountCircleLine className="text-orange-800 rounded size-7 
                    hover:scale-125 transition-all  duration-150"/>} text="About"/>
                 </a>
-                <a onClick={() => handleClick("Projetos")}>
+                <a onClick={() => handleClick("Projects")}>
                     <NavItem icon={<BiFolderOpen className="text-orange-800 rounded size-7 
                     hover:scale-125 transition-all  duration-150"/>} text="Projetos"/>
                 </a>
