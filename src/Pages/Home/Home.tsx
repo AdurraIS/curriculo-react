@@ -17,6 +17,7 @@ import { FaLinkedin } from "react-icons/fa";
 import Player from "../../assets/player.gif";
 import Heart from "../../assets/heart.gif";
 import Carrossel from "../../components/Carrossel/Carrossel";
+import { CardLink } from "../../components/CardLink/CardLink";
 
 export const Home = () => {
 
@@ -131,12 +132,7 @@ export const Home = () => {
         </>
     )
 }
-const CardLink = ({ icon, text = "Tipo" }) => (
-    <div className="card-links">
-        {icon}
-        <h3>{text}</h3>
-    </div>
-);
+
 const CardSkill = ({ content, text }) => (
     <div className="card-links group">
         <div className="group-hover:scale-0 group-hover:opacity-0 transition-all duration-200">
