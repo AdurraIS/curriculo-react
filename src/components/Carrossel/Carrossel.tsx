@@ -20,9 +20,9 @@ const Carousel: React.FC<CarouselProps> = ({ items }) => {
   return (
     <Slider {...settings}>
       <div className="p-5">
-        <div className="m-auto border-orange-800 bg-orange-200 p-5 border rounded-xl w-fit">
+        <div className="m-auto bg-orange-200 p-10 rounded-[10px] w-[60vw]">
           
-          <div className="flex flex-row  max-[639px]:flex-col max-[639px]:w-48 gap-4">
+          <div className="flex flex-row  max-[639px]:flex-col justify-between max-[639px]:w-48 gap-4">
             <div className="w-96">
             <h3 className="text-[20px] pb-2">Sales Unity</h3>
             <p  className="text-[16px] max-[639px]:w-48">Desenvolvi uma API com Spring Boot, que utiliza Spring Security para geração de JWT Tokens.
@@ -30,7 +30,7 @@ const Carousel: React.FC<CarouselProps> = ({ items }) => {
                 o usuario a fazer pedido de orçamentos e visualização de métricas.
             </p>
             </div>
-            <img src={SalesUnityImg} className="w-[500px]  max-[639px]:w-[200px] border  border-orange-800 rounded "/>
+            <img src={SalesUnityImg} className="w-[400px] max-[639px]:w-[200px] border  border-orange-800 rounded "/>
           </div>
           
         </div>
