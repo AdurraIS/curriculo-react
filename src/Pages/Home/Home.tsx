@@ -123,7 +123,7 @@ export const Home = () => {
                         <CardContent content="Resolução de problemas" />
                     </div>
                 </div>
-                <div id="Projects" className=" text-orange-900 bg-orange-600 bg-opacity-30 pt-20 flex flex-col min-h-[30vh]
+                <div id="Projects" className=" text-orange-900 bg-orange-600 bg-opacity-30 py-20 flex flex-col min-h-[30vh]
             py-10 w-full max-h-full px-[15vw] justify-center">
                     <h3 className="text-[26px] text-center mb-6">Projetos</h3>
                     <Carrossel items={items} />
