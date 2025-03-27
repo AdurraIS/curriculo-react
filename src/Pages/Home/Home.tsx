@@ -20,6 +20,15 @@ import Heart from "../../assets/heart.gif";
 import Carrossel from "../../components/Carrossel/Carrossel";
 import { CardLink } from "../../components/CardLink/CardLink";
 
+interface CardSkillProps {
+    content: React.ReactNode;
+    text: string;
+}
+
+interface CardContentProps {
+    content: string;
+}
+
 export const Home = () => {
 
     const items = [
@@ -134,18 +143,19 @@ export const Home = () => {
     )
 }
 
-const CardSkill = ({ content, text }) => (
+const CardSkill = ({ content, text }: CardSkillProps) => (
     <div className="card-links group">
         <div className="group-hover:scale-0 group-hover:opacity-0 transition-all duration-200">
             {content}
         </div>
-        <h3 className=" absolute group-hover:scale-100 text-[16px] group-hover:opacity-100 scale-0 
+        <h3 className="absolute group-hover:scale-100 text-[16px] group-hover:opacity-100 scale-0 
         opacity-0 transition-all duration-200">
             {text}
         </h3>
     </div>
 );
-const CardContent = ({ content }) => (
+
+const CardContent = ({ content }: CardContentProps) => (
     <div className="card">
         <h3>{content}</h3>
     </div>
