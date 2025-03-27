@@ -1,4 +1,3 @@
-import { BiHomeAlt2 } from "react-icons/bi";
 import { BiFolderOpen } from "react-icons/bi";
 import { PiSwordBold } from "react-icons/pi";
 import { RiAccountCircleLine } from "react-icons/ri";
@@ -6,7 +5,7 @@ import { RiAccountCircleLine } from "react-icons/ri";
 
 export const Header = () => {
 
-const handleClick = (elementId) => {
+const handleClick = (elementId: string) => {
     const element = document.getElementById(elementId);
     if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
@@ -34,7 +33,7 @@ const handleClick = (elementId) => {
     </>
   )
 }
-const NavItem = ({icon, text = "Tipo"}) => (
+const NavItem = ({icon, text}: {icon: React.ReactNode, text: string}) => (
     <div className="relative flex items-center justify-center group cursor-pointer">
         {icon}
         <span className=" absolute text-orange-800 transition-all top-9
