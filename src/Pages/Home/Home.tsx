@@ -1,14 +1,15 @@
-import NETLOGO from "../../assets/NET_CORE_LOGO.png";
 import JAVALOGO from "../../assets/JAVA_LOGO.png";
 import REACTLOGO from "../../assets/REACT_LOGO.webp";
 import Personagem from "../../assets/personagem.png";
 import pythonlogo from "../../assets/pythonlogo.png";
 import tailwindlogo from "../../assets/tailwind.png";
 import springlogo from "../../assets/spring-logo.png";
-import gitlogo from "../../assets/git-logo.png";
 import githublogo from "../../assets/github-logo.png";
-import vitelogo from "../../assets/vite-logo.png";
+import gitlogo from "../../assets/git-logo.png";
 import typescriptlogo from "../../assets/type-script-logo.webp";
+import javascriptlogo from "../../assets/javascript.png";
+import nodejslogo from "../../assets/nodejs.webp";
+
 import csharplogo from "../../assets/c-sharp-logo.svg";
 import { Header } from "../../components/Header/Header"
 import { CiCirclePlus } from "react-icons/ci";
@@ -26,6 +27,21 @@ export const Home = () => {
         typescriptlogo
     ];
 
+    const hardSkills = [
+        { logo: JAVALOGO, text: "JAVA" },
+        { logo: REACTLOGO, text: "REACT" },
+        { logo: pythonlogo, text: "PYTHON" },
+        { logo: tailwindlogo, text: "TAILWIND" },
+        { logo: springlogo, text: "SPRING" },
+        { logo: gitlogo, text: "GIT" },
+        { logo: githublogo, text: "GITHUB" },
+        { logo: typescriptlogo, text: "TypeScript" },
+        { logo: javascriptlogo, text: "JavaScript" },
+        { logo: nodejslogo, text: "NodeJs" },
+
+
+    ];
+
     return (
         <>
             <div className="flex flex-col items-center pt-6 bg-orange-200 h-full w-screen selection:bg-orange-700 selection:text-white">
@@ -37,7 +53,7 @@ export const Home = () => {
                             <h2 className="md:text-[18px] max-[639px]:text-[15px]">Software Engineer</h2>
                             <img className="h-7 pl-2" src={Heart} />
                         </div>
-                        <h3 className="text-[16px] text-orange-950">Desenvolvedor Full Stack | Java | .NET | React</h3>
+                        <h3 className="text-[16px] text-orange-950">Desenvolvedor Full Stack | Java | React</h3>
                         <div className="mt-3">
                             <CardContent content="• Formado em Análise e Desenvolvimento de Sistemas." />
                         </div>
@@ -92,29 +108,14 @@ export const Home = () => {
                 <div id="Skills" className=" text-orange-900 flex flex-col min-h-[30vh]
             py-20 mb-10 w-full max-h-full px-[15vw] justify-center">
                     <h3 className="text-[26px] mb-6">Hard Skills</h3>
-                    <div className=" flex flex-row gap-4 justify-center flex-wrap select-none w-full">
-                        <CardSkill content={<img src={JAVALOGO} className="sm:size-[70px] max-[639px]:size-14" />}
-                            text="JAVA" />
-                        <CardSkill content={<img src={REACTLOGO} className="sm:size-[70px] max-[639px]:size-14" />}
-                            text="REACT" />
-                        <CardSkill content={<img src={NETLOGO} className="sm:size-[70px] max-[639px]:size-14" />}
-                            text=".NET" />
-                        <CardSkill content={<img src={pythonlogo} className="sm:size-[70px] max-[639px]:size-14" />}
-                            text="PYTHON" />
-                        <CardSkill content={<img src={tailwindlogo} className="sm:size-[70px] max-[639px]:size-14" />}
-                            text="TAILWIND" />
-                        <CardSkill content={<img src={springlogo} className="sm:size-[70px] max-[639px]:size-14" />}
-                            text="SPRING" />
-                        <CardSkill content={<img src={gitlogo} className="sm:size-[70px] max-[639px]:size-14" />}
-                            text="GIT" />
-                        <CardSkill content={<img src={githublogo} className="sm:size-[70px] max-[639px]:size-14" />}
-                            text="GITHUB" />
-                        <CardSkill content={<img src={vitelogo} className="sm:size-[70px] max-[639px]:size-14" />}
-                            text="VITE" />
-                        <CardSkill content={<img src={typescriptlogo} className="sm:size-[70px] max-[639px]:size-14" />}
-                            text="TypeScript" />
-                        <CardSkill content={<img src={csharplogo} className="sm:size-[70px] max-[639px]:size-14" />}
-                            text="C#" />
+                    <div className="flex flex-row gap-4 justify-center flex-wrap select-none w-full">
+                        {hardSkills.map((skill, index) => (
+                            <CardSkill 
+                                key={index}
+                                content={<img src={skill.logo} className="sm:size-[70px] max-[639px]:size-14" />}
+                                text={skill.text}
+                            />
+                        ))}
                     </div>
                     <h3 className="text-[26px] my-6">Soft Skills</h3>
                     <div className="flex flex-row justify-center text-center gap-6">
