@@ -9,12 +9,9 @@ import gitlogo from "../../assets/git-logo.png";
 import typescriptlogo from "../../assets/type-script-logo.webp";
 import javascriptlogo from "../../assets/javascript.png";
 import nodejslogo from "../../assets/nodejs.webp";
-
-import csharplogo from "../../assets/c-sharp-logo.svg";
 import { Header } from "../../components/Header/Header"
 import { CiCirclePlus } from "react-icons/ci";
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Player from "../../assets/player.gif";
 import Heart from "../../assets/heart.gif";
 import Carrossel from "../../components/Carrossel/Carrossel";
@@ -29,12 +26,8 @@ interface CardContentProps {
     content: string;
 }
 
-export const Home = () => {
 
-    const items = [
-        csharplogo,
-        typescriptlogo
-    ];
+export const Home = () => {
 
     const hardSkills = [
         { logo: JAVALOGO, text: "JAVA" },
@@ -136,7 +129,7 @@ export const Home = () => {
                 <div id="Projects" className=" text-orange-900 bg-orange-600 bg-opacity-30 py-20 flex flex-col min-h-[30vh]
             py-10 w-full max-h-full px-[15vw] justify-center">
                     <h3 className="text-[26px] text-center mb-6">Projetos</h3>
-                    <Carrossel items={items} />
+                    <Carrossel />
                 </div>
             </div>
         </>

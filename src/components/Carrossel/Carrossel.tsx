@@ -1,15 +1,10 @@
-import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SalesUnityImg from "../../assets/Carrossel.png"
-import { CardLink } from "../CardLink/CardLink";
-import { FaGithub } from "react-icons/fa";
-interface CarouselProps {
-  items: string[];
-}
 
-const Carousel: React.FC<CarouselProps> = ({ items }) => {
+
+const Carrossel = () => {
   const settings = {
     dots: true,
     infinite: true,
@@ -80,4 +75,4 @@ const Carousel: React.FC<CarouselProps> = ({ items }) => {
   );
 };
 
-export default Carousel;
+export default Carrossel;
