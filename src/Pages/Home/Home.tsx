@@ -14,7 +14,6 @@ import { CiCirclePlus } from "react-icons/ci";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Player from "../../assets/player.gif";
 import Heart from "../../assets/heart.gif";
-import Carrossel from "../../components/Carrossel/Carrossel";
 import { CardLink } from "../../components/CardLink/CardLink";
 import Projects from "../../components/Projects/Projects";
 
