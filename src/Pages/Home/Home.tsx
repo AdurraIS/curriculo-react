@@ -16,6 +16,7 @@ import Player from "../../assets/player.gif";
 import Heart from "../../assets/heart.gif";
 import Carrossel from "../../components/Carrossel/Carrossel";
 import { CardLink } from "../../components/CardLink/CardLink";
+import Projects from "../../components/Projects/Projects";
 
 interface CardSkillProps {
     content: React.ReactNode;
@@ -129,7 +130,7 @@ export const Home = () => {
                 <div id="Projects" className=" text-orange-900 bg-orange-600 bg-opacity-30 py-20 flex flex-col min-h-[30vh]
             py-10 w-full max-h-full px-[15vw] justify-center">
                     <h3 className="text-[26px] text-center mb-6">Projetos</h3>
-                    <Carrossel />
+                    <Projects/>
                 </div>
             </div>
         </>
