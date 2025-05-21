@@ -93,7 +93,7 @@ export const Home = () => {
                         <div className="w-[60%] max-[800px]:w-full">
                             <h1 className="text-[26px]">Sobre mim</h1>
                             <p className="max-[800px]:p-0 p-2 text-[18px]">
-                                Olá, me chamo Giovanni, tenho 20 anos e sou apaixonado por tecnologia, videogames e música. Em 2024 me formei em Análise e
+                                Olá, me chamo Giovanni, tenho 21 anos e sou apaixonado por tecnologia, videogames e música. Em 2024 me formei em Análise e
                                 Desenvolvimento de Sistemas, formação muito importante em que iniciei meus estudos no desenvolvimento de software.
                             </p>
                             <p className="max-[800px]:p-0 p-2 text-[18px]">
